@@ -1,0 +1,13 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  netlify:
+    build:
+      context: C:\Users\isuru.samarasinha\Documents\GitHub\netlify_test\netlify\netlify
+      dockerfile: Dockerfile
+    image: netlify
+    ports:
+    - target: 80
+version: '3.4'
